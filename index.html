@@ -1,0 +1,51 @@
+ <html>                                                                  
+ <head>   
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>web</title> 
+<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+<script type="text/javascript" src="JQuery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+   // we will add our javascript code here      
+ $(document).ready(function() {
+   	var btns = $("a.btn");
+	btns.addClass("button");
+	btns.attr("href", "");
+	
+	btns.hover(function() {					//mouse in
+		$(this).addClass("hovers");
+		},
+	function() {
+		$(this).removeClass("hovers");  // mouse out
+		}
+	  );	
+	  
+	btns.click(function(e) {
+	var btn = $(this);
+	// clearQueue is probably wanted here, to remove previous queued animations
+		$("#info").fadeOut(200, function(e) {
+		btns.removeClass("clicks"); // remove clicks css from all buttons
+		btn.addClass("clicks"); // add clicks css to clicked button
+		$(this).html(btn.attr("content")); // display the html from clicked button's attribute in info div tag
+		$(this).fadeIn(); //fade in the info div tag
+		});
+return false; // reset the click function?
+	});
+
+
+});
+</script>                                                               
+ </head>                                                                 
+ 
+<body id="pageBg">
+<br>
+<a class="btn" content="<h1>Hej!</h1>Du har tryckt på knapp 1" href="nojavascript.html?button=1">knapp 1</a>
+<a class="btn" content="<h1>Hej!</h1>Du har tryckt på knapp 2" href="nojavascript.html?button=1">knapp 2</a>
+<a class="btn" content="<h1>Hej!</h1>Du har tryckt på knapp 3" href="nojavascript.html?button=1">knapp 3</a>
+
+<div id="info" class="displayArea">
+</div>
+
+
+
+</body>                                                                 
+</html>

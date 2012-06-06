@@ -1,0 +1,118 @@
+/**********************************
+
+css for my home page
+
+***********************************/
+
+/******************EXISTING****************/
+
+
+/****************CLASSES********************/
+.red { background-color: red; }
+.button {
+color: #ffffff;
+padding: 10px 20px;
+background: -moz-linear-gradient(
+		top,
+		#66CCCC 0%,
+		#339999 50%,
+		#006666 50%,
+		#0099cc);
+
+background: -webkit-gradient(linear, top, bottom,
+							 from(#66CCCC),
+							 color-stop(0.50,#339999),
+							 color-stop(0.50,#006666),
+							 to(#0099cc));
+border-radius: 10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+
+border: 1px solid #000000;
+
+-moz-box-shadow:
+0px 1px 3px rgba(000,000,000,0.5),
+inset 0px 0px 1px rgba(255,255,255,0.6);
+
+-webkit-box-shadow:
+0px 1px 3px rgba(000,000,000,0.5),
+inset 0px 0px 1px rgba(255,255,255,0.6);
+
+text-shadow:
+0px -1px 0px rgba(000,000,000,1),
+0px 1px 0px rgba(255,255,255,0.2);
+
+text-decoration: none;
+}
+ .hovers {
+background: -moz-linear-gradient(
+		top,
+		#66CCCC 0%,
+		#339999 50%,
+		#006666 50%,
+		#0099cc);
+
+background: -webkit-gradient(linear, top, bottom,
+							 from(#66CCCC),
+							 color-stop(0.50,#339999),
+							 color-stop(0.50,#006666),
+							 to(#0099cc));
+-moz-box-shadow:
+0px 0px 1px 1px rgba(255,255,255,1.0),
+inset 0px 0px 1px rgba(255,255,255,0.6);
+
+-webkit-box-shadow:
+0px 0px 1px 1px rgba(255,255,255,0.9),
+inset 0px 0px 1px rgba(255,255,255,0.6);
+}
+
+ .clicks {
+background-color: #0099cc;
+
+
+background: -webkit-gradient(linear, top, bottom,
+							 from(#66CCCC),
+							 color-stop(0.10,#339999),
+							 color-stop(0.10,#006666),
+							 to(#0099cc));
+-moz-box-shadow:
+0px 0px 1px 1px rgba(000,000,000,0.6),
+inset 0px 0px 50px rgba(0,0,0,0.6);
+
+-webkit-box-shadow:
+0px 0px 1px 1px rgba(000,000,000,0.6),
+inset 0px 0px 50px rgba(0,0,0,0.6);
+
+}
+
+.displayArea {
+width: 400px;
+height: 400px;
+background-color: #333333;
+border: 2px solid #339999;
+border-radius: 30px;
+padding: 30px;
+display: none;
+position: fixed;
+top:10%;
+left: 35%;
+}
+
+/*******************************************/
+
+/*******************IDs*********************/
+#pageBg
+{
+background-color: #666666;
+}
+
+#topBorder
+{
+position: left;
+width: 100%;
+background-repeat:repeat-x;
+}
+
+
+
+/*******************************************/
